@@ -1,0 +1,49 @@
+#************************************************************
+#                 VOUCHER SCREEN
+#************************************************************
+<VoucherScreen>:
+    name: "voucher"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'logo.png'
+
+    FloatLayout:
+
+    Label:
+        text: 'Ticket Voucher'
+        font_size: 50
+        font_name: 'armyrangersacad'
+        underline: True
+        color: 0,128,0,1
+        pos_hint: {'center_x':.5, 'center_y':.95}
+
+    Label:
+        text: root.voucher
+        font_size: 30
+        font_name: 'Times New Roman'
+        color: 0,0,0,1
+        pos_hint: {'center_x':.3, 'center_y':.7}
+
+    Button:
+        background_normal: 'frame.png'
+        size_hint: .2, .32
+        pos_hint: {'center_x':.85, 'center_y':.25}
+
+
+
+    Label:
+        text:"TERMS AND CONDITONS: \n 1)Show this Voucher on counter for payment. \n 2) Voucher is valid for SINGLE USE only. \n 3) Travelling without payment is illegal. \n 4) NO Arms and Drugs allowed in train. \n 5) NO pets are allowed."
+        font_size: 25
+        underline: True
+        font_name: 'Times New Roman'
+        color: 0,0,0,1
+        pos_hint: {'center_x':.35, 'center_y':.31}
+
+    Label:
+        text: "POWERED BY AAI_SOFTWARES"
+        bold: True
+        font_name: "comicsansms"
+        color: 0,0,0,1
+        pos_hint: {'center_x':.85, 'center_y':0.03}
